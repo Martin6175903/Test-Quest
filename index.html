@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manao</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="authorization">
+        <div class="container">
+
+            <h1 class="authorization__title">Здравствуйте, вас приветствует компания Manao!</h1>
+
+            <p class="authorization__text">Предлагаем вам перейти на наш сайт после авторизации</p>
+
+            <form class="authorization__form" method="post" action="php/index.php">
+
+                <!-- Блок Авторизации -->
+                
+                <div class="form__box-1">
+                    <div class="form__inner">
+                        <h2 class="form__title">Вход</р> /
+                        <a class="form__title form__title--active-btn-1">Регистрация</a>
+                    </div>
+                    <div class="form__info-box">
+                        <label class="form__label"> Логин: </label>
+                        <input class="form__login" type="text" placeholder="Логин" required>
+                    </div>
+                    <div class="form__info-box form__info-box--last">
+                        <label class="form__label"> Пароль: </label>
+                        <input class="form__login" type="password" placeholder="Пароль" required>
+                    </div>
+                    <button class="form__btn" type="submit">Войти</button> 
+                </div>
+
+                <!-- Блок Регистрации -->
+
+                <div class="form__box-2 form__box--hidden">
+                    <div class="form__inner">
+                        <h2 class="form__title">Регистрация</р> /
+                        <a class="form__title form__title--active-btn-2">Вход</a>
+                    </div>
+                    <div class="form__box-inner">
+                        <div class="form__info-box">
+                            <label class="form__label form__label-1"> Логин: </label>
+                            <input class="form__login" type="text" placeholder="Login" required>
+                        </div>
+                        <div class="form__info-box">
+                            <label class="form__label form__label-2"> Пароль: </label>
+                            <input class="form__login" type="password" placeholder="Password" required>
+                        </div>
+                        <div class="form__info-box">
+                            <label class="form__label form__label-3"> Подтвердите пароль: </label>
+                            <input class="form__confirm-psw" type="password" placeholder="Confirm password" required>
+                        </div>
+                        <div class="form__info-box">
+                            <label class="form__label form__label-4"> Электронный адрес почты: </label>
+                            <input class="form__email" type="email" placeholder="E-mail" required>
+                        </div>
+                    </div>
+                    <div class="form__info-box">
+                        <label class="form__label form__label-5"> Имя: </label>
+                        <input class="form__name" type="text" placeholder="Name" required>
+                    </div>
+                    <button class="form__btn" type="submit">Зарегистрироваться</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+
+    <script src="js/main.js"></script>
+    <script src="js/registration-valid.js"></script>
+</body>
+</html>
